@@ -1,0 +1,4 @@
+@echo off
+echo Running H5 trigger geometry DIRTY-LABEL trigger=square, 10-round test...
+python federated.py --data=fmnist --local_ep=2 --bs=256 --num_agents=10 --rounds=10 --snap=1 --num_corrupt=1 --poison_frac=0.5 --class_per_agent=10 --base_class=5 --target_class=7 --clean_label=0 --trigger_geometry=square --pattern_type=square --verify_trigger_geometry=1 --verify_poisoning=1 --seed=1
+pause
